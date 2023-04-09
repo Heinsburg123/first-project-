@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <canvas></canvas>
+    <button class="next"><i class="fa fa-share"></i></button>
+    <button class="back"><i class="fa fa-reply"></i></button>
+    <button class="retry"><i class="fa fa-refresh"></i></button>
+    <p class="volumn"><i class="fa fa-volume-up fa-3x"></i></p>
+    <h2 class="BGM">BGM 1 is playing</h2>
+    <select class="choose" value="BGM 1">
+        <option value="BGM 1">BGM 1</option>
+        <option value="BGM 2">BGM 2</option>
+        <option value="BGM 3">BGM 3</option>
+    </select>
+    <h2 class="note1">TOP 5 FASTEST SPEEDRUN TIME</h2>
+    <p class="no1">1.</p>
+    <p class="no2">2.</p>
+    <p class="no3">3.</p>
+    <p class="no4">4.</p>
+    <p class="no5">5.</p>
+    <button class="currentmode">MODE GAME:DEFAULT</button>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+    <div class='mode'>
+        <button class="start">PLAY</button>
+        <button class="speed">SPEEDRUN</button>
+    </div>
+    <dialog>
+        <form method="dialog">
+            <p class="congrats">AWESOME!!</p>
+            <div class="inbox">
+                <p class='clock'><i class="fa fa-clock-o"></i></p>
+                <p class="point"></p>
+            </div>
+            <button class='close'>x</button>
+        </form>
+    </dialog>
+    <div class='board'>
+        <button class="menu">MAIN MENU</button>
+        <button class="levels">LEVELS</button>
+        <button class="settings">SETTINGS</button>
+        <button class="highscore">HIGHSCORE</button>
+    </div>
+    <button class='showbutt'>...</button>
+    <div class="show">
+        <p1 class="sign">MAIN MENU</p1>
+        <img src="logo.png">
+    </div>
+    <div class="grid"></div>
+    <audio class='vid1' controls autoplay hidden loop>
+        <source src="bgm1.mp3" type="audio/mpeg">
+    </audio>
+    <audio class='vid2' controls autoplay hidden loop>
+        <source src="bgm2.mp3" type="audio/mpeg">
+    </audio>
+    <audio class='vid3' controls autoplay hidden loop>
+        <source src="bgm3.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>     
